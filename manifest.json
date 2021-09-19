@@ -1,6 +1,6 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Chrome Translator",
+  "description": "Build SE project",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
@@ -8,7 +8,7 @@
   },
   "permissions": ["storage"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
     "default_icon": {
       "16": "/images/get_started16.png",
       "32": "/images/get_started32.png",
