@@ -1,4 +1,7 @@
+import fetch from "node-fetch";
+console.log("here");
 const res = await fetch("https://libretranslate.com/translate", {
+
 	method: "POST",
 	body: JSON.stringify({
 		q: "",
