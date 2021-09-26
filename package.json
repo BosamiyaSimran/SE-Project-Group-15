@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm build"
@@ -33,6 +32,7 @@
     "husky": "^6.0.0"
   },
   "dependencies": {
+    "@google-cloud/translate": "^6.3.0",
     "date-fns": "^2.21.1",
     "jquery": "^3.6.0",
     "node-fetch": "^3.0.0"
