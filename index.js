@@ -1,5 +1,6 @@
 let selectedLanguage = document.getElementById("language");
-
-var valueofSelectedLanguage = selectedLanguage.options[selectedLanguage.selectedIndex].value;
-console.log(valueofSelectedLanguage);
-
+chrome.tabs.executeScript( {
+  code: "window.getSelection().toString();"
+}, function(selection) {
+  document.getElementById("output").value = selection[0];
+});

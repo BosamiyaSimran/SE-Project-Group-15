@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="box.css">
+    
   </head>
   <body>
-    <label for="language_dropdown">Choose a language to tranlate the text to:</label>
-
-    <select name="language" id="language">
+    <div class = "menu"><h2><label for="language_dropdown">Choose a language to translate the text to:</label></h2></div class>
+    <div class="menu">
+    <select name="language" id="language">    
     <option value="Hindi">Hindi</option>
     <option value="Gujarati">Gujarati</option>
     <option value="Marathi">Marathi</option>
     <option value="French">French</option>
+    </div class>
     </select>
-    <script src="index.js"></script>
+    <button id="myButton" onclick="getSelectedText()">Click me</button>
+    <form name="testform">
+    <textarea name="selectedtext" id="output"
+                      rows="5"
+                      cols="20"></textarea>
+    </form>
+    <script src="index.js"></script>  
   </body>
 </html>
