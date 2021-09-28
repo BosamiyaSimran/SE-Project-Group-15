@@ -1,6 +1,6 @@
 # SE-Project-Group-15
 
-# Translator - Browser Extension
+# Translator - Chrome Extension
 
 An extension that converts your selected text into the language you are comfortable with. Makes life easier:dancer:
 
