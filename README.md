@@ -24,9 +24,15 @@ An extension that converts your selected text into the language you are comforta
 - Enable developer settings if it is not enabled
 - Choose Load Unpacked
 - Select the repository folder that was cloned in the first step
-![image](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/installation.png)
+<p align="center">
+  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/installation.png">
+</p>
+
 - The extension will now be added to the Chrome
-![image](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/extensionLoaded.png)
+<p align="center">
+  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/extensionLoaded.png">
+</p>
+
 - Screenshot of working of the extension
 ![image]()
 
