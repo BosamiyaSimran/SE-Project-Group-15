@@ -1,5 +1,6 @@
 # SE-Project-Group-15
 
+![Build Status](https://github.com/BosamiyaSimran/SE-Project-Group-15/workflows/build/badge.svg)
 ![Licence](https://img.shields.io/github/license/BosamiyaSimran/SE-Project-group-15)
 ![node-current](https://img.shields.io/node/v/@google-cloud/translate?logo=nodedotjs)
 [![codecov](https://codecov.io/gh/BosamiyaSimran/SE-Project-Group-15/branch/main/graph/badge.svg?token=YGOQY4DH9F)](https://codecov.io/gh/BosamiyaSimran/SE-Project-Group-15)
