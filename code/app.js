@@ -1,16 +1,35 @@
 const http = require('http');
+const express = require('express');
+const app = express();
+const bodyParser = require("body-parser");
+const ISO6391 = require('iso-639-1');
+app.use(bodyParser.urlencoded({
+  extended:true
+}));
 
 const credentials = require('./api-credentials.json')
-// const background = require('./background');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+app.get("/", function(req, res) {
+  res.send("hello");
 });
+
+let text = null;
+let target = null;
+
+app.post("/translateText", bodyParser.json(), async function(req, res) {
+
+  text = req.body.text;
+  target = req.body.toLanguage;
+  translateText().then((result) => {
+
+res.send(result).end();
+  })
+
+});
+
+app.listen(3000, function(){
+  console.log("server is running on port 3000");
+})
 
 // Imports the Google Cloud client library
 const {Translate} = require('@google-cloud/translate').v2;
@@ -18,27 +37,19 @@ const {Translate} = require('@google-cloud/translate').v2;
 // Creates a client
 const translate = new Translate({projectId: 'se-project-fall-21', credentials:credentials});
 
-// translate = TranslateOptions.getDefaultInstance().getService();
-/**
- * TODO(developer): Uncomment the following lines before running the sample.
- */
-const text = 'What is your name?';
-const target = 'fr';
+
 
 async function translateText() {
-  console.log("in func");
+  
   // Translates the text into the target language. "text" can be a string for
   // translating a single piece of text, or an array of strings for translating
   // multiple texts.
-  let [translations] = await translate.translate(text, target);
+  let [translations] = await translate.translate(text, ISO6391.getCode(target));
   translations = Array.isArray(translations) ? translations : [translations];
-  console.log('Translations:');
+ 
   translations.forEach((translation, i) => {
     console.log(`${text[i]} => (${target}) ${translation}`);
   });
+  return translations;
 }
 
-translateText();
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
