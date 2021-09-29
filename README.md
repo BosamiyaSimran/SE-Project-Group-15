@@ -12,6 +12,8 @@ An extension that converts your selected text into the language you are comforta
 **Click on the image below to view the video**
 
 
+https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-872a-c61115c56a72.mov
+
 
 ## Use Cases
 
