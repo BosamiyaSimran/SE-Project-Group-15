@@ -20,7 +20,8 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 
 ## Use Cases
 
-- 
+- People can easily read articles in different languages with a click.
+-  
 ## Mind Map
 <p align="center">
  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/output-onlinepngtools.png">
