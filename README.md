@@ -59,7 +59,13 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 - Node.js
 - NPM
 
-## Style Checker and Analyzer
+## Style Checker and Analyzer 
+
+## Code Formatter 
+
+- Lint
+- 'npm run lint' to check the linter to check errors in code formatting in the code.
+- 'eslint --fix <filename>' to fix the particular error in the file. Replace the path of the file or file name to correct the error.
 
 ### Installation
 
