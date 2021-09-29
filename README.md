@@ -48,6 +48,14 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
   <img width="900" height="350" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Screen Shot 2021-09-29 at 6.40.00 PM.png">
 </p>
 
+### Running the Project 
+
+`npm install` in command line interface to install all the dev dependencies.
+
+### Running Application
+
+Go to the code folder of the project in command line and run `node app.js`
+
 ## Languages
 
 - JavaScript
@@ -66,14 +74,6 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 - Lint
 - `npm run lint` to check the linter to check errors in code formatting in the code.
 - `eslint --fix <filename>` to fix the particular error in the file. Replace the path of the file or file name to correct the error.
-
-### Installation
-
-`npm install` in command line interface to install all the dev dependencies.
-
-### Running Application
-
-Go to the code folder of the project in command line and run `node app.js`
 
 ## IDE and Code Fomatter
 

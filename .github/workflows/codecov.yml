@@ -15,3 +15,4 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           files: ./lib.c.gcov
+          token: a5f440a5-7ae3-4166-b032-14f03649dc24
