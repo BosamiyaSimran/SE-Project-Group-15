@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 
 - Screenshot of working of the extension
 <p align="center">
-  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Screen Shot 2021-09-29 at 6.40.00 PM.png">
+  <img width="900" height="350" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Screen Shot 2021-09-29 at 6.40.00 PM.png">
 </p>
 
 ## Languages
