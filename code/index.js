@@ -7,7 +7,7 @@ chrome.tabs.executeScript( {
   document.getElementById("output").value = selection[0];
   selectedText = selection[0];
  
-  let data = {text: selectedText, toLanguage: 'fr'};
+  let data = {text: selectedText, toLanguage: selectedLanguage};
  
 makeRequest('POST',"http://localhost:3000/translateText",data);
 });
@@ -23,7 +23,7 @@ function makeRequest(method, url, data = null) {
             let temp =  xhr.response
            
               resolve(xhr.response);
-            alert(selectedText + " in french" + " is " + temp);
+            alert(selectedText + " in " + selectedLanguage + " is " + temp);
           } else {
            
               reject({

@@ -2,7 +2,7 @@ const http = require('http');
 const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
-
+const ISO6391 = require('iso-639-1');
 app.use(bodyParser.urlencoded({
   extended:true
 }));
@@ -44,7 +44,7 @@ async function translateText() {
   // Translates the text into the target language. "text" can be a string for
   // translating a single piece of text, or an array of strings for translating
   // multiple texts.
-  let [translations] = await translate.translate(text, target);
+  let [translations] = await translate.translate(text, ISO6391.getCode(target));
   translations = Array.isArray(translations) ? translations : [translations];
  
   translations.forEach((translation, i) => {
