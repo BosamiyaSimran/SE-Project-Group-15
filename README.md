@@ -18,6 +18,10 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 ## Use Cases
 
 - 
+## Mind Map
+<p align="center">
+ <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Mind-Map.png">
+</p>
 
 ## Installation
 
@@ -92,3 +96,4 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 #### "Why" and "Why not" Docs
 
 Think about the case when you are reading something online. You come across few words you are not familiar with in that language. You will google search the those words in another language. But now, we have language translator, helping you to covert the words by a single select with the mouse.
+
