@@ -23,7 +23,7 @@ app.post("/translateText", bodyParser.json(), async function(req, res) {
   translateText().then((result) => {
 
 res.send(result).end();
-  })
+  }).catch(err => console.log(err));
 
 });
 
@@ -36,8 +36,6 @@ const {Translate} = require('@google-cloud/translate').v2;
 
 // Creates a client
 const translate = new Translate({projectId: 'se-project-fall-21', credentials:credentials});
-
-
 
 async function translateText() {
   
@@ -53,3 +51,4 @@ async function translateText() {
   return translations;
 }
 
+module.exports = app;
