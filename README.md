@@ -103,4 +103,4 @@ Think about the case when you are reading something online. You come across few 
 - Simran Bosamiya
 - Parth Thosani
 - Neha Agarwal
-- Parth Sarang Jinturkar
+- Parth Jinturkar
