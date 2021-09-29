@@ -22,6 +22,7 @@
     "@babel/plugin-transform-classes": "7.4.4",
     "babel-loader": "^8.2.2",
     "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^8.1.1",
     "debug": "^4.3.1",
