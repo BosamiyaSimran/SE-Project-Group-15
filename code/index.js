@@ -1,4 +1,11 @@
-let selectedLanguage = document.getElementById("language").value;
+languageSelectDropdown = document.getElementById("language");
+
+selectedLanguage = languageSelectDropdown.value;
+languageSelectDropdown.addEventListener('change', ()=>{
+  selectedLanguage =languageSelectDropdown.value;
+  let data = {text: selectedText, toLanguage: selectedLanguage};
+  makeRequest('POST',"http://localhost:3000/translateText",data);
+});
 
 let selectedText = null
 chrome.tabs.executeScript( {
