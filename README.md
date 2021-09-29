@@ -1,15 +1,16 @@
 # SE-Project-Group-15
 
 # Translator - Chrome Extension
-<p align="center">
- <img width="1300" height="400" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Blue%20Traits-Professional-Translator-removebg-preview.jpeg">
-</p>
 An extension that converts your selected text into the language you are comfortable with. Makes life easier:dancer:
 
 [![Build Status](https://app.travis-ci.com/BosamiyaSimran/SE-Project-Group-15.svg?branch=main)](https://app.travis-ci.com/BosamiyaSimran/SE-Project-Group-15)![Licence](https://img.shields.io/github/license/BosamiyaSimran/SE-Project-group-15)
 ![node-current](https://img.shields.io/node/v/@google-cloud/translate?logo=nodedotjs)
 [![codecov](https://codecov.io/gh/BosamiyaSimran/SE-Project-Group-15/branch/main/graph/badge.svg?token=YGOQY4DH9F)](https://codecov.io/gh/BosamiyaSimran/SE-Project-Group-15)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5533076.svg)](https://doi.org/10.5281/zenodo.5533076)
+<p align="center">
+ <img width="1300" height="400" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Blue%20Traits-Professional-Translator-removebg-preview.jpeg">
+</p>
+
 
 **Click on the image below to view the video**
 
