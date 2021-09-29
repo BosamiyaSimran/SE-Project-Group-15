@@ -97,3 +97,10 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
 
 Think about the case when you are reading something online. You come across few words you are not familiar with in that language. You will google search the those words in another language. But now, we have language translator, helping you to covert the words by a single select with the mouse.
 
+## Team Members
+
+- Nisarg Shah
+- Simran Bosamiya
+- Parth Thosani
+- Neha Agarwal
+- Parth Sarang Jinturkar
