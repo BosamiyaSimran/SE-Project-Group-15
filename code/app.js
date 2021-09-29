@@ -10,14 +10,21 @@ app.use(bodyParser.urlencoded({
 const credentials = require('./api-credentials.json')
 
 app.get("/", function(req, res) {
-  // console.log("here----", req.body);
   res.send("hello");
 });
 
+let text = null;
+let target = null;
 
-app.post("/translateText", function(req, res) {
-  console.log("here----", req);
-  res.send("text received");
+app.post("/translateText", bodyParser.json(), async function(req, res) {
+
+  text = req.body.text;
+  target = req.body.toLanguage;
+  translateText().then((result) => {
+
+res.send(result).end();
+  })
+
 });
 
 app.listen(3000, function(){
@@ -31,20 +38,18 @@ const {Translate} = require('@google-cloud/translate').v2;
 const translate = new Translate({projectId: 'se-project-fall-21', credentials:credentials});
 
 
-const text = 'What is your name?';
-const target = 'fr';
 
 async function translateText() {
-  console.log("in func");
+  
   // Translates the text into the target language. "text" can be a string for
   // translating a single piece of text, or an array of strings for translating
   // multiple texts.
   let [translations] = await translate.translate(text, target);
   translations = Array.isArray(translations) ? translations : [translations];
-  console.log('Translations:');
+ 
   translations.forEach((translation, i) => {
     console.log(`${text[i]} => (${target}) ${translation}`);
   });
+  return translations;
 }
 
-translateText();

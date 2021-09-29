@@ -1,34 +1,45 @@
-let selectedLanguage = document.getElementById("language");
+let selectedLanguage = document.getElementById("language").value;
+
 let selectedText = null
 chrome.tabs.executeScript( {
   code: "window.getSelection().toString();"
 }, function(selection) {
   document.getElementById("output").value = selection[0];
   selectedText = selection[0];
-  console.log(selectedText);
-  let request = new XMLHttpRequest();
-  console.log(request);
-  request.open("POST", "http://localhost:3000/translateText", true);
-  request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  request.send(JSON.stringify({"text": selectedText}));
-  console.log(request.response);
-  // $.ajax({
-
-  //   url : 'http://localhost:3000/translateText',
-  //   type : 'POST',
-  //   data : {
-  //       'selectedText' : selectedText
-  //   },
-  //   dataType:'json',
-  //   success : function(data) {
-  //     console.log("here success");              
-  //       alert('Data: '+data);
-  //   },
-  //   error : function(request,error)
-  //   {
-  //       alert("Request: "+JSON.stringify(request));
-  //   }
-  // });
+ 
+  let data = {text: selectedText, toLanguage: 'fr'};
+ 
+makeRequest('POST',"http://localhost:3000/translateText",data);
 });
+
+function makeRequest(method, url, data = null) {
+  return new Promise(function (resolve, reject) {
+      let xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhr.send(JSON.stringify(data));
+      xhr.onload = function () {
+          if (this.status >= 200 && this.status < 300) {
+            let temp =  xhr.response
+           
+              resolve(xhr.response);
+            alert(selectedText + " in french" + " is " + temp);
+          } else {
+           
+              reject({
+                  status: this.status,
+                  statusText: xhr.statusText
+              });
+          }
+      };
+      xhr.onerror = function () {
+          reject({
+              status: this.status,
+              statusText: xhr.statusText
+          });
+      };
+      
+  });
+}
 
 
