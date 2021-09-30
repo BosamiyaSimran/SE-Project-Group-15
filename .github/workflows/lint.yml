@@ -29,7 +29,8 @@ jobs:
         run: npm ci --force
 
       - name: Initialize ESLint
-        run: npx eslint --init
+        run: npx eslint --init && npx prettier --write . && npx prettier --check .
+
         
       - name: Run linters
         uses: wearerequired/lint-action@v1
