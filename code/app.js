@@ -53,3 +53,4 @@ async function translateText() {
   return translations;
 }
 
+module.exports = app;
