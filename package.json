@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "husky": "^6.0.0",
     "iso-639-1": "^2.1.9",
+    "standard": "^16.0.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
