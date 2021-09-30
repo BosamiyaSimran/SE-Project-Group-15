@@ -71,9 +71,16 @@ Go to the code folder of the project in command line and run `node app.js`
 
 ## Code Formatter 
 
-- Lint
+### Lint
+- Linting is the automated checking of your source code for programmatic and stylistic errors.
 - `npm run lint` to check the linter to check errors in code formatting in the code.
 - `eslint --fix <filename>` to fix the particular error in the file. Replace the path of the file or file name to correct the error.
+
+### Prettier 
+- Prettier is an opinionated code formatter.
+- `npx prettier --write .` to check the errors in code formating
+- `npx prettier --check .` to check the errors in code formatting but only checks that files are already formatted, rather than overwriting them.
+prettier --write and prettier --check are the most common ways to run Prettier
 
 ## IDE and Code Fomatter
 
