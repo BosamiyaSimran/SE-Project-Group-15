@@ -1,13 +1,13 @@
-const http = require('http');
-const express = require('express');
+const http = require("http");
+const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const ISO6391 = require('iso-639-1');
+const ISO6391 = require("iso-639-1");
 app.use(bodyParser.urlencoded({
   extended:true
 }));
 
-const credentials = require('./api-credentials.json')
+const credentials = require("./api-credentials.json");
 
 app.get("/", function(req, res) {
   res.send("hello");
@@ -29,13 +29,13 @@ res.send(result).end();
 
 app.listen(3000, function(){
   console.log("server is running on port 3000");
-})
+});
 
 // Imports the Google Cloud client library
-const {Translate} = require('@google-cloud/translate').v2;
+const {Translate} = require("@google-cloud/translate").v2;
 
 // Creates a client
-const translate = new Translate({projectId: 'se-project-fall-21', credentials:credentials});
+const translate = new Translate({projectId: "se-project-fall-21", credentials:credentials});
 
 async function translateText() {
   
