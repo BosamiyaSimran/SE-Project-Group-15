@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 node_modules
 api-credentials.json
+api-credentials.js
 
 # Logs
 logs
