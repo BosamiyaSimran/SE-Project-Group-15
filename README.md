@@ -69,6 +69,9 @@ Go to the code folder of the project in command line and run `node app.js`
 
 ## Style Checker and Analyzer 
 
+- Javascript Standard Style is style guide, linter, and formatter for Javascript and styling means ranking the importance of code clarity.
+- `npx standard --fix ` is used to fix the the style 
+
 ## Code Formatter 
 
 ### Lint
