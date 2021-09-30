@@ -7,8 +7,8 @@ app.use(bodyParser.urlencoded({
   extended:true
 }));
 
-const credentials = require('./api-credentials.json')
-
+const credentials = require('./api-credentials')
+// console.log(credentials);
 app.get("/", function(req, res) {
   res.send("hello");
 });
@@ -17,13 +17,20 @@ let text = null;
 let target = null;
 
 app.post("/translateText", bodyParser.json(), async function(req, res) {
-
+  try {
   text = req.body.text;
   target = req.body.toLanguage;
   translateText().then((result) => {
-
-res.send(result).end();
+  res.json(JSON.parse(JSON.stringify(result))).end();
+  }).catch(err => {
+    console.log("----", err);
+    res.status(500).send({"error": err.message});
   })
+}
+catch(err)  {
+  console.log("--------",err);
+    // next(err);
+  };
 
 });
 
@@ -38,9 +45,8 @@ const {Translate} = require('@google-cloud/translate').v2;
 const translate = new Translate({projectId: 'se-project-fall-21', credentials:credentials});
 
 
-
 async function translateText() {
-  
+  if(text && text.length>0 && target){
   // Translates the text into the target language. "text" can be a string for
   // translating a single piece of text, or an array of strings for translating
   // multiple texts.
@@ -50,7 +56,15 @@ async function translateText() {
   translations.forEach((translation, i) => {
     console.log(`${text[i]} => (${target}) ${translation}`);
   });
-  return translations;
+
+  return {text: translations[0]};
+}
+else if(target){
+  throw new Error('Text cannot be empty. Please select text');
+}
+else if(text){
+  throw new Error('Please select a language');
+}
 }
 
 module.exports = app;
