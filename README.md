@@ -74,29 +74,21 @@ Go to the code folder of the project in command line and run `node app.js`
 
 ## Code Formatter 
 
-### Lint
-- Linting is the automated checking of your source code for programmatic and stylistic errors.
-- `npm run lint` to check the linter to check errors in code formatting in the code.
-- `eslint --fix <filename>` to fix the particular error in the file. Replace the path of the file or file name to correct the error.
-
 ### Prettier 
-- Prettier is an opinionated code formatter.
+- Prettier is an opinionated code formatter which will format your code in structured way.
 - `npx prettier --write .` to check the errors in code formating
 - `npx prettier --check .` to check the errors in code formatting but only checks that files are already formatted, rather than overwriting them.
 prettier --write and prettier --check are the most common ways to run Prettier
 
-## IDE and Code Fomatter
+## Syntax Checker 
 
-- IDE and Style Checker: [VSCode](https://code.visualstudio.com/)
-
-- Code Style Formatter: [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
-
-- Code Syntax Checker : [Eslint](https://https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for Vscode plugin.
-
-VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.
+### Lint
+- Linting is the automated checking of your source code for programmatic and syntax errors.
+- `npm run lint` to check the linter to check errors in code formatting in the code.
+- `eslint --fix <filename>` to fix the particular error in the file. Replace the path of the file or file name to correct the error.
 
 
-### Unit Test
+## Unit Test
   
   - [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/).
     
@@ -108,11 +100,11 @@ VS Code uses js-beautify internally, but it lacks the ability to modify the styl
     
     npm will then attempt to run all test files that end with ```*.test.js ```, if you do not specify filename.
 
-### Code Coverage
-  
-  - [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io/)
+## Code Coverage
+  - [CodeCov](https://about.codecov.io)
+  - Codecov is a code analysis tool with which users can group, merge, archive, and compare coverage reports
 
-#### "Why" and "Why not" Docs
+## "Why" and "Why not" Translator
 
 Think about the case when you are reading something online. You come across few words you are not familiar with in that language. You will google search the those words in another language. But now, we have language translator, helping you to covert the words by a single select with the mouse.
 
