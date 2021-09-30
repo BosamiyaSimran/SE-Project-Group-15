@@ -20,7 +20,8 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 
 ## Use Cases
 
-- 
+- People can easily read articles in different languages with a click.
+-  
 ## Mind Map
 <p align="center">
  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/output-onlinepngtools.png">
@@ -43,7 +44,17 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 </p>
 
 - Screenshot of working of the extension
-![image]()
+<p align="center">
+  <img width="900" height="350" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/Screen Shot 2021-09-29 at 6.40.00 PM.png">
+</p>
+
+### Running the Project 
+
+`npm install` in command line interface to install all the dev dependencies.
+
+### Running Application
+
+Go to the code folder of the project in command line and run `node app.js`
 
 ## Languages
 
@@ -56,15 +67,20 @@ https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-
 - Node.js
 - NPM
 
-## Style Checker and Analyzer
+## Style Checker and Analyzer 
 
-### Installation
+## Code Formatter 
 
-`npm install` in command line interface to install all the dev dependencies.
+### Lint
+- Linting is the automated checking of your source code for programmatic and stylistic errors.
+- `npm run lint` to check the linter to check errors in code formatting in the code.
+- `eslint --fix <filename>` to fix the particular error in the file. Replace the path of the file or file name to correct the error.
 
-### Running Application
-
-Go to the code folder of the project in command line and run `node app.js`
+### Prettier 
+- Prettier is an opinionated code formatter.
+- `npx prettier --write .` to check the errors in code formating
+- `npx prettier --check .` to check the errors in code formatting but only checks that files are already formatted, rather than overwriting them.
+prettier --write and prettier --check are the most common ways to run Prettier
 
 ## IDE and Code Fomatter
 
