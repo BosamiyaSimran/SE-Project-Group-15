@@ -25,6 +25,6 @@ jobs:
       with:
         node-version: '16'
     - run: npm install --verbose --force 
-    - run: npm install wrap-ansi
+    - run: npm install wrap-ansi pathval
     - run: npm ci  
     - run: npm test
