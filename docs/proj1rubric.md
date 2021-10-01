@@ -1,5 +1,9 @@
 <br clear=all>
 
+
+## Sum of self assessment (column 2) = 202
+
+
 | Notes|Self Assessment  zero (none), one (a litte), two (somewhat), three (a lot)| Evidence|
 |-----|--------|---------|
 |workload is spread over the whole team (one team member is often Xtimes more productive than the others...but nevertheless, here is a track record that everyone is contributing a lot)|3|Evidence in GH  (https://github.com/BosamiyaSimran/SE-Project-Group-15/commits/main)|
