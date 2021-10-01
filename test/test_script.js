@@ -31,20 +31,6 @@ describe('Translation', ()=>{
             });
         });
     });
-
-    describe('/translateText', () => {
-        it('it should translate the text', (done)=>{
-            chai.request(server)
-            .post('/translateText')
-            .set('content-type', 'application/json')
-            .send({ text: 'नमस्ते', toLanguage: 'English' })
-            .end((err, res) => {
-                // console.log(res.body, typeof(res.body), { "text": 'Hi' }, typeof({ "text": 'Hi' }), res.body == { "text": 'Hi' });
-                (res.body['text']).should.be.equal( 'Hi' );
-                done();
-            });
-        });
-    });
     
     describe('/translateText', () => {
         it('it should translate the text', (done)=>{
