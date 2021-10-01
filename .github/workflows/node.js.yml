@@ -25,5 +25,5 @@ jobs:
       with:
         node-version: '16'
     - run: npm install
-    - run: npm ci
+    - run: npx -p npm@6 npm ci 
     - run: npm test
