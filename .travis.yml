@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 12
+  - 14
 addons:
   chrome: stable
 install:
@@ -8,4 +8,4 @@ install:
 script:
   - echo "Add script to pack chrome extension"
   - npm test
-after_success: npm run coverage
+after_success: npm test -- --coverage
