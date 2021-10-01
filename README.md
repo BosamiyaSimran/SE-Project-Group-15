@@ -1,5 +1,3 @@
-# SE-Project-Group-15
-
 # Translator - Chrome Extension
 An extension that converts your selected text into the language you are comfortable with. Makes life easier:dancer:
 
@@ -20,11 +18,11 @@ An extension that converts your selected text into the language you are comforta
 
 https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-872a-c61115c56a72.mov
 
+## Users Guide
+[Project Vision and User Story](https://github.com/BosamiyaSimran/SE-Project-Group-15/wiki/User-Story-and-Project-Vision)
+[Class/Function Description](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/docs/class-function-description.md)
+[Test Cases Documentation]()
 
-## Use Cases
-
-- People can easily read articles in different languages with a click.
--  
 ## Mind Map
 <p align="center">
  <img width="900" height="500" src="https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/images/output-onlinepngtools.png">
@@ -106,6 +104,10 @@ prettier --write and prettier --check are the most common ways to run Prettier
 ## Code Coverage
   - [CodeCov](https://about.codecov.io)
   - Codecov is a code analysis tool with which users can group, merge, archive, and compare coverage reports
+
+## Want to Contribute?
+You are welcome. Please follow the guidelines given in [CONTRIBUTING](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/CONTRIBUTING.md)
+
 
 ## "Why" and "Why not" Translator
 
