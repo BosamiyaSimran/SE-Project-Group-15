@@ -108,7 +108,7 @@ describe('Translation', ()=>{
     });
 
     describe('/translateText', () => {
-        it('text should not be empty error', (done)=>{
+        it('language should be selected', (done)=>{
             chai.request(server)
             .post('/translateText')
             .set('content-type', 'application/json')
