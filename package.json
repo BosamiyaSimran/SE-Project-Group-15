@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint 'code/**.js'",
     "build": "npm build",
-    "test": "mocha test/test_script.js"
+    "test": "mocha test/test_script.js --exit"
   },
   "repository": {
     "type": "git",
