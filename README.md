@@ -19,9 +19,11 @@ An extension that converts your selected text into the language you are comforta
 https://user-images.githubusercontent.com/89279195/135187055-4812f117-ba6a-4042-872a-c61115c56a72.mov
 
 ## Users Guide
-[Project Vision and User Story](https://github.com/BosamiyaSimran/SE-Project-Group-15/wiki/User-Story-and-Project-Vision)
-[Class/Function Description](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/docs/class-function-description.md)
-[Test Cases Documentation]()
+- [Project Vision and User Story](https://github.com/BosamiyaSimran/SE-Project-Group-15/wiki/User-Story-and-Project-Vision)
+
+- [Class/Function Description](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/docs/class-function-description.md)
+
+- [Test Cases Documentation](https://github.com/BosamiyaSimran/SE-Project-Group-15/blob/main/docs/Test-Cases-Summary.pdf)
 
 ## Mind Map
 <p align="center">
