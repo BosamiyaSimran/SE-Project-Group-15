@@ -7,8 +7,8 @@ app.use(bodyParser.urlencoded({
   extended:true
 }));
 
-// const credentials = require('./api-credentials')
-const credentials = process.env.GOOGLE_TRANSLATE_API;
+const credentials = require('./api-credentials')
+// const credentials = process.env.GOOGLE_TRANSLATE_API;
 // console.log(credentials);
 app.get("/", function(req, res) {
   res.send("hello");
